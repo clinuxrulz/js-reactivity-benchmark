@@ -13,6 +13,7 @@ import { tansuFramework } from "./frameworks/tansu";
 import { usignalFramework } from "./frameworks/inactive/uSignal";
 import { vueReactivityFramework } from "./frameworks/inactive/vueReactivity";
 import { xReactivityFramework } from "./frameworks/xReactivity";
+import { atomicDuckFramework } from "./frameworks/atomic-duck";
 
 // Currently failing kairoBench tests
 // import { molWireFramework } from "./frameworks/molWire";
@@ -26,10 +27,11 @@ import { xReactivityFramework } from "./frameworks/xReactivity";
 export const frameworkInfo: FrameworkInfo[] = [
   { framework: alienFramework, testPullCounts: true },
   { framework: angularFramework2, testPullCounts: true },
+  { framework: atomicDuckFramework, },
   { framework: compostateFramework, testPullCounts: true },
   { framework: mobxFramework, testPullCounts: true },
   { framework: preactSignalFramework, testPullCounts: true },
-  { framework: reactivelyFramework, testPullCounts: true },
+  // { framework: reactivelyFramework, testPullCounts: true },
   { framework: sFramework },
   { framework: solidFramework }, // solid can't testPullCounts because batch executes all leaf nodes even if unread
   { framework: potaFramework },
